@@ -11,36 +11,65 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-      const carouselItems = document.querySelectorAll('#nolanCarousel .carousel__item');
-      const prevButton = document.getElementById('prevSlide');
-      const nextButton = document.getElementById('nextSlide');
+  /* =========================
+   *   CAROUSEL NOLAN
+   * ========================= */
+  const nolanItems = document.querySelectorAll('#nolanCarousel .carousel__item');
+  const prevNolan = document.getElementById('prevSlide');
+  const nextNolan = document.getElementById('nextSlide');
 
-      let currentIndex = 0;
+  if (nolanItems.length > 0 && prevNolan && nextNolan) {
+    let currentIndexNolan = 0;
 
-      function showSlide(index) {
-        // Retirer l'état 'active' de toutes les slides
-        carouselItems.forEach(item => {
-          item.classList.remove('active');
-        });
-        // Afficher celle demandée
-        carouselItems[index].classList.add('active');
-      }
+    function showNolanSlide(index) {
+      nolanItems.forEach(item => item.classList.remove('active'));
+      nolanItems[index].classList.add('active');
+    }
 
-      // Clic sur PREV
-      prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex <= 0) 
-          ? carouselItems.length - 1 
-          : currentIndex - 1;
-        showSlide(currentIndex);
-      });
-
-      // Clic sur NEXT
-      nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex >= carouselItems.length - 1) 
-          ? 0 
-          : currentIndex + 1;
-        showSlide(currentIndex);
-      });
+    prevNolan.addEventListener('click', () => {
+      currentIndexNolan = (currentIndexNolan <= 0)
+        ? nolanItems.length - 1
+        : currentIndexNolan - 1;
+      showNolanSlide(currentIndexNolan);
     });
+
+    nextNolan.addEventListener('click', () => {
+      currentIndexNolan = (currentIndexNolan >= nolanItems.length - 1)
+        ? 0
+        : currentIndexNolan + 1;
+      showNolanSlide(currentIndexNolan);
+    });
+  }
+
+  /* =========================
+   *   CAROUSEL PARTENAIRES
+   * ========================= */
+  const partItems = document.querySelectorAll('#PartenairesCarousel .carousel__item');
+  const prevPart = document.getElementById('prevSlide2');
+  const nextPart = document.getElementById('nextSlide2');
+
+  if (partItems.length > 0 && prevPart && nextPart) {
+    let currentIndexPart = 0;
+
+    function showPartSlide(index) {
+      partItems.forEach(item => item.classList.remove('active'));
+      partItems[index].classList.add('active');
+    }
+
+    prevPart.addEventListener('click', () => {
+      currentIndexPart = (currentIndexPart <= 0)
+        ? partItems.length - 1
+        : currentIndexPart - 1;
+      showPartSlide(currentIndexPart);
+    });
+
+    nextPart.addEventListener('click', () => {
+      currentIndexPart = (currentIndexPart >= partItems.length - 1)
+        ? 0
+        : currentIndexPart + 1;
+      showPartSlide(currentIndexPart);
+    });
+  }
+});
 
     
