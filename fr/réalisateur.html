@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christopher Nolan - Echos of Time</title>
+  
+  <link rel="stylesheet" href="/src/css/index.css" />
+
+  <header class="header">
+    <div class="header__container">
+      <button class="header__menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <h1 class="header__site-title">Echos of Time</h1>
+      <a href="index-eng.html" class="header__lang-switch">EN</a>
+    </div>
+  </header>
+
+  <!-- ===== MENU MOBILE ===== -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="/FR/index.html">Accueil</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Articles</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">À propos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <section class="main__intro">
+    <h1 class="main__intro-title">Christopher Nolan</h1>
+    <p class="main__intro-text">
+        Christopher Nolan est un réalisateur britannique reconnu pour son habileté à explorer et à manipuler le temps dans ses films. À travers une filmographie riche et complexe, il invite le spectateur à remettre en question sa perception du temps et de la réalité.
+    </p>
+    <img 
+          src="/assets/img/nolan.webp" 
+          alt="nolan" 
+          class="article__img" 
+        />
+  </section>
+      
+      <!-- === CARROUSEL === -->
+      <div class="carousel" id="nolanCarousel">
+        
+        <!-- SLIDE 1 : Memento -->
+        <div class="carousel__item active">
+          <img 
+            src="/assets/img/memento.webp" 
+            alt="Affiche du film Memento" 
+            class="carousel__image" 
+          />
+          <p class="carousel__description">
+            Dès “Memento” (2000), Nolan démontre son intérêt 
+            pour les structures narratives non linéaires. 
+            Le film raconte l’histoire de Leonard Shelby, 
+            un homme souffrant de pertes de mémoire à court terme, 
+            présenté en séquences inversées, reflétant l’instabilité 
+            de sa mémoire et du temps.
+          </p>
+        </div>
+
+        <!-- SLIDE 2 : Inception -->
+        <div class="carousel__item">
+          <img 
+            src="/assets/img/inception.webp" 
+            alt="Affiche du film Inception" 
+            class="carousel__image" 
+          />
+          <p class="carousel__description">
+            Avec “Inception” (2010), le réalisateur pousse plus loin 
+            l’exploration du temps en créant des rêves imbriqués, 
+            chacun avec sa propre échelle temporelle. 
+            Ce concept innovant offre une réflexion profonde 
+            sur la subjectivité du temps et la manière dont il peut 
+            être perçu différemment selon les niveaux de conscience.
+          </p>
+        </div>
+
+        <!-- SLIDE 3 : Interstellar -->
+        <div class="carousel__item">
+          <img 
+            src="/assets/img/interstellar.webp" 
+            alt="Affiche du film Interstellar" 
+            class="carousel__image" 
+          />
+          <p class="carousel__description">
+            “Interstellar” (2014) aborde le temps sous l’angle 
+            scientifique de la relativité. Le film suit un groupe 
+            d’astronautes voyageant à travers l’espace pour trouver 
+            une nouvelle planète habitable. Cette représentation 
+            cinématographique de la théorie d’Einstein met en lumière 
+            les effets de la gravité sur le temps.
+          </p>
+        </div>
+
+        <!-- BOUTONS PREV/NEXT -->
+        <button class="carousel__button carousel__button--prev" id="prevSlide">
+          &laquo;
+        </button>
+        <button class="carousel__button carousel__button--next" id="nextSlide">
+          &raquo;
+        </button>
+      </div>
+      <!-- === FIN DU CARROUSEL === -->
+
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__info">
+      <p class="footer__author">Enzo Locatelli MMI 1 B2 | enzort70290@gmail.Com</p>
+      <p class="footer__mention">
+        Projet réalisé en 2024 dans le cadre d’un exercice pédagogique 
+        au département MMi de Montbéliard
+      </p>
+    </div>
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        <li class="footer__menu-item">
+          <a href="#">Autres projets</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="index-fr.html">Articles</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#contact">Contact</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#glossaire">Glossaire</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script src="/src/js/script.js"></script>
+</body>
+</html>
