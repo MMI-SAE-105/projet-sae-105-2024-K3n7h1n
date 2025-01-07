@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Christopher Nolan - Echos of Time</title>
+    
+    <link rel="stylesheet" href="/src/css/index.css" />
+
+    <header class="header">
+        <div class="header__container">
+            <button class="header__menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <h1 class="header__site-title">Echos of Time</h1>
+            <a href="index-eng.html" class="header__lang-switch">FR</a>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <!-- "X" button to close -->
+        <button class="mobile-menu__close-button" aria-label="Close Menu">×</button>
+
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/en/index.html">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/en/about.html">About</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/en/frise.html">Timeline</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/en/contact.html">Contact</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/en/glossaire.html">Glossary</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="/en/Partenaires.html">Other Projects</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">My selection</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section class="main__intro">
+        <h1 class="main__intro-title">Christopher Nolan</h1>
+        <p class="main__intro-text">
+                Christopher Nolan is a British director renowned for his ability to explore and manipulate time in his films. Through a rich and complex filmography, he invites the viewer to question their perception of time and reality.
+        </p>
+        <img 
+                    src="/assets/img/nolan.webp" 
+                    alt="Nolan" 
+                    class="article__img" 
+                />
+    </section>
+            
+            <!-- === CAROUSEL === -->
+            <div class="carousel" id="nolanCarousel">
+                
+                <!-- SLIDE 1 : Memento -->
+                <div class="carousel__item active">
+                    <img 
+                        src="/assets/img/memento.webp" 
+                        alt="Memento Movie Poster" 
+                        class="carousel__image" 
+                    />
+                    <p class="carousel__description">
+                        From “Memento” (2000), Nolan demonstrates his interest 
+                        in non-linear narrative structures. 
+                        The film tells the story of Leonard Shelby, 
+                        a man suffering from short-term memory loss, 
+                        presented in reverse sequences, reflecting the instability 
+                        of his memory and time.
+                    </p>
+                </div>
+
+                <!-- SLIDE 2 : Inception -->
+                <div class="carousel__item">
+                    <img 
+                        src="/assets/img/inception.webp" 
+                        alt="Inception Movie Poster" 
+                        class="carousel__image" 
+                    />
+                    <p class="carousel__description">
+                        With “Inception” (2010), the director takes the exploration of time further 
+                        by creating nested dreams, 
+                        each with its own time scale. 
+                        This innovative concept offers a deep reflection 
+                        on the subjectivity of time and how it can 
+                        be perceived differently across levels of consciousness.
+                    </p>
+                </div>
+
+                <!-- SLIDE 3 : Interstellar -->
+                <div class="carousel__item">
+                    <img 
+                        src="/assets/img/interstellar.webp" 
+                        alt="Interstellar Movie Poster" 
+                        class="carousel__image" 
+                    />
+                    <p class="carousel__description">
+                        “Interstellar” (2014) approaches time from the scientific angle 
+                        of relativity. The film follows a group 
+                        of astronauts traveling through space to find 
+                        a new habitable planet. This cinematic representation 
+                        of Einstein's theory highlights 
+                        the effects of gravity on time.
+                    </p>
+                </div>
+
+                <!-- PREV/NEXT BUTTONS -->
+                <button class="carousel__button carousel__button--prev" id="prevSlide">
+                    &laquo;
+                </button>
+                <button class="carousel__button carousel__button--next" id="nextSlide">
+                    &raquo;
+                </button>
+            </div>
+            <!-- === END OF CAROUSEL === -->
+
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="footer__info">
+            <p class="footer__author">Enzo Locatelli MMI 1 B2 | enzort70290@gmail.com</p>
+            <p class="footer__mention">
+                Project completed in 2024 as part of an educational exercise 
+                at the MMi department of Montbéliard
+            </p>
+        </div>
+        <nav class="footer__nav">
+            <ul class="footer__menu">
+                <li class="footer__menu-item">
+                    <a href="#">Other Projects</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="index-en.html">Articles</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#glossary">Glossary</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <script src="/src/js/script.js"></script>
+</body>
+</html>
