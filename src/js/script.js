@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  
+  
   /* =========================
    *   CAROUSEL PARTENAIRES
    * ========================= */
@@ -72,4 +74,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-    
+document.addEventListener('DOMContentLoaded', () => {
+  // Sélection du bouton hamburger
+  const hamburgerButton = document.querySelector('.header__menu-toggle');
+  // Sélection du menu mobile
+  const mobileMenu = document.getElementById('mobileMenu');
+  // Sélection du bouton “×”
+  const closeButton = document.querySelector('.mobile-menu__close-button');
+
+  // OUVERTURE : au clic sur le hamburger, on ajoute la classe .open
+  hamburgerButton.addEventListener('click', () => {
+    mobileMenu.classList.add('open');
+  });
+
+  // FERMETURE : au clic sur le “×”, on retire .open
+  closeButton.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+  });
+});

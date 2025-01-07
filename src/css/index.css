@@ -59,38 +59,59 @@
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 70%;
     max-width: 300px;
     height: 100%;
     background-color: #1a2430; /* bleu nuit */
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+  
+    transform: translateX(10%) scale(0.9);
+    opacity: 0;
+  
+    
+    transition: transform 0.4s ease, opacity 0.4s ease;
     z-index: 999;
-    padding-top: 3rem; 
+    padding-top: 3rem;
   }
   
-  /* Quand la classe .open est ajoutée, on le ramène dans le champ de vision */
+  
   .mobile-menu.open {
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
+    opacity: 1;
   }
   
+
   .mobile-menu__list {
     list-style: none;
     padding: 0 1rem;
   }
   
+ 
   .mobile-menu__item {
     margin-bottom: 1rem;
   }
   
   .mobile-menu__link {
-    color: #ffd700;    /* or */
+    color: #ffd700; /* or */
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
   }
   
+  .mobile-menu__close-button {
+    position: absolute;
+    top: 1rem;
+   
+    left: 1rem;
+  
+    /* Apparence du bouton */
+    background: none;       
+    border: none;          
+    font-size: 1.5rem;      
+    color: #ffd700;        
+    cursor: pointer;
+  }
+
   /* ------------------------------ */
   /*        CONTENU PRINCIPAL       */
   /* ------------------------------ */
@@ -208,6 +229,11 @@
     text-align: center;
     padding: 1rem;
     
+  }
+  .footer__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
   }
   .footer__info {
     margin-bottom: 1rem;
@@ -654,3 +680,76 @@
     width: 80px;
   }
 }
+
+/************************************
+*    PAGE GLOSSAIRE (glossaire.html)
+************************************/
+
+/* SECTION INTRO */
+.glossary-intro {
+  background-color: var(--color-gris-fonce);
+  color: #1a2430;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.glossary-intro__title {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.glossary-intro__text {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* SECTION GLOSSARY */
+.glossary {
+  padding: 1rem;
+  background-color: var(--color-gris-acier);
+  color: #000;
+  line-height: 1.5;
+}
+
+/* Chaque terme du glossaire */
+.glossary__item {
+  margin-bottom: 1.5rem;
+}
+
+/* Titre du terme */
+.glossary__term {
+  font-size: 1.2rem;
+  color: var(--color-or);
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: red;
+}
+
+/* Définition */
+.glossary__definition {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .glossary-intro__text {
+    font-size: 1.1rem;
+  }
+  .glossary {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .glossary__term {
+    font-size: 1.3rem;
+  }
+  .glossary__definition {
+    font-size: 1.05rem;
+  }
+}
+
