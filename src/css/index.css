@@ -562,3 +562,95 @@
 .about-cta-link:hover {
   text-decoration: underline;
 }
+
+/************************
+ *  TIMELINE PAGE 
+ ***********************/
+
+/* Zone principale */
+.timeline-section {
+  padding: 1rem;
+  background-color: var(--color-gris-acier);
+  color: #000;
+  background-color: #bcb8b8;
+  
+}
+
+.timeline-section__title {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  
+}
+
+.timeline-section__intro {
+  background-color: var(--color-gris-fonce);
+  color: #1a2430;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Container*/
+.timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Images */
+.timeline-step__image {
+  max-width: 250px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+ 
+}
+
+.timeline-step__caption {
+  background-color: #e3e3e3;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #333;
+  font-size: 0.95rem;
+  text-align: center;
+  max-width: 220px;
+}
+
+/* Flèche qui sépare les étapes */
+.timeline-arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.timeline-arrow img {
+  width: 60px; 
+  height: auto;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .timeline-section__intro {
+    max-width: 720px;
+    margin: 0 auto 1.5rem auto;
+  }
+  .timeline-section {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .timeline-step__image {
+    max-width: 300px;
+  }
+  .timeline-step__caption {
+    max-width: 280px;
+  }
+  .timeline-arrow img {
+    width: 80px;
+  }
+}
