@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM :Locatelli
+- PRÉNOM :Enzo
+- GROUPE :B2
+- URL du site :https://echos-of-time.netlify.app
+- URL FIGMA :https://www.figma.com/design/ucpxx1dn1aErUTmK1jlXlN/Projet-solo?node-id=51-53&t=LhcoIQx8fARFLcaR-1
