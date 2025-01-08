@@ -1,0 +1,55 @@
+/* ========== GLOSSARY ========== */
+.glossary-intro {
+    background-color: var(--color-gris-fonce);
+    color: #1a2430;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .glossary-intro__title {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+  }
+  .glossary-intro__text {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .glossary {
+    padding: 1rem;
+    background-color: var(--color-gris-acier);
+    color: #000;
+    line-height: 1.5;
+  }
+  .glossary__item {
+    margin-bottom: 1.5rem;
+  }
+  .glossary__term {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #ffd700;
+  }
+  .glossary__definition {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    line-height: 1.4;
+  }
+  @media (min-width: 768px) {
+    .glossary-intro__text {
+      font-size: 1.1rem;
+    }
+    .glossary {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .glossary__term {
+      font-size: 1.3rem;
+    }
+    .glossary__definition {
+      font-size: 1.05rem;
+    }
+  }
+  

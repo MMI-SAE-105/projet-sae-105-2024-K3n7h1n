@@ -16,35 +16,48 @@
       <!-- Bouton hamburger -->
       <button class="header__menu-toggle" aria-label="Toggle Menu">&#9776;</button>
 
-      <!-- Titre -->
+      <!-- Titre du site -->
       <h1 class="header__site-title">Echos of Time</h1>
 
       <!-- Bouton pour aller à la version anglaise -->
       <a href="/en/index.html" class="header__lang-switch">EN</a>
     </div>
+    
   </header>
 
   <!-- ===== MENU MOBILE ===== -->
   <nav class="mobile-menu" id="mobileMenu">
+    <!-- "X" button to close -->
+    <button class="mobile-menu__close-button" aria-label="Close Menu">×</button>
+
     <ul class="mobile-menu__list">
-      <li class="mobile-menu__item">
-        
-        <a class="mobile-menu__link" href="index-fr.html">Accueil</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Articles</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">À propos</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="/FR/contact.html">Contact</a>
-      </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/index.html">Acceuil</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/about.html">A Propos</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/frise.html">Frise</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/contact.html">Contact</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/glossaire.html">Glossaire</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/Partenaires.html">Autre Projets</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/fr/recommandation.html">Ma Sélection</a>
+        </li>
     </ul>
-  </nav>
+</nav>
 
   <!-- ===== CONTENU PRINCIPAL ===== -->
   <main class="main">
+    <!-- SECTION INTRO -->
     <section class="main__intro">
       <h2 class="main__intro-title">À Propos d’Echos of Time</h2>
       <p class="main__intro-text">
@@ -53,37 +66,50 @@
       </p>
     </section>
 
+    <!-- SECTION DEFINITION -->
     <section class="main__definition">
       <h3 class="main__definition-title">Définition de l'horloge</h3>
       <p class="main__definition-text">
-        "L'horloge, symbole intemporel de la mesure du temps, rythme nos vies en capturant chaque instant qui s'écoule. Du simple tic-tac à la course effrénée des aiguilles, elle rappelle que le temps ne s'arrête jamais, mais continue de filer, nous poussant à saisir l'instant présent."
+        “L'horloge, symbole intemporel de la mesure du temps, rythme nos vies en capturant 
+        chaque instant qui s'écoule. Du simple tic-tac à la course effrénée des aiguilles, 
+        elle rappelle que le temps ne s'arrête jamais, mais continue de filer, 
+        nous poussant à saisir l'instant présent.”
       </p>
     </section>
 
+    <!-- SECTION ARTICLES -->
     <section class="main__articles">
       <h3 class="main__articles-title">Mes Titres Principaux</h3>
 
       <!-- Article 1 -->
       <article class="article">
-        <img src="/assets/img/img1.webp" alt="Objet temps" class="article__img" />
+        <img 
+          src="/assets/img/img1.webp" 
+          alt="Objet temps" 
+          class="article__img" 
+        />
         <div class="article__content">
           <h4 class="article__title">Présentation de l’Objet Temporel</h4>
           <p class="article__text">
             Un voyage au cœur d’un objet qui traverse les âges : la montre.
           </p>
-          <a href="/FR/objet.html" class="card__link">
-            <div class="fr">Lire la suite <div> 
-          </a>
+          <a href="/FR/objet.html" class="card__link">Lire la suite</a>
         </div>
       </article>
 
       <!-- Article 2 -->
       <article class="article">
-        <img src="/assets/img/img2.webp" alt="Your name" class="article__img" />
+        <img 
+          src="/assets/img/img2.webp" 
+          alt="Your name" 
+          class="article__img" 
+        />
         <div class="article__content">
           <h4 class="article__title">Présentation du Film “Your Name”</h4>
           <p class="article__text">
-            Plongez dans l'émouvante histoire de deux adolescents dont les destins se croisent mystérieusement grâce à un échange de corps surnaturel.
+            Plongez dans l'émouvante histoire de deux adolescents 
+            dont les destins se croisent mystérieusement 
+            grâce à un échange de corps surnaturel.
           </p>
           <a href="/FR/film.html" class="card__link">Lire la suite</a>
         </div>
@@ -91,41 +117,56 @@
 
       <!-- Article 3 -->
       <article class="article">
-        <img src="/assets/img/img3.webp" alt="Coldplay" class="article__img" />
+        <img 
+          src="/assets/img/img3.webp" 
+          alt="Coldplay" 
+          class="article__img" 
+        />
         <div class="article__content">
           <h4 class="article__title">COLDPLAY : “Clocks”</h4>
           <p class="article__text">
-            Avec son rythme hypnotique et ses mélodies poignantes, Clocks de Coldplay nous entraîne dans une réflexion profonde sur le temps qui file, les choix non faits, et le désir d’y trouver un sens 
+            Avec son rythme hypnotique et ses mélodies poignantes, 
+            “Clocks” de Coldplay nous entraîne dans une réflexion profonde 
+            sur le temps qui file, les choix non faits, 
+            et le désir d’y trouver un sens.
           </p>
-          <a href="/FR/musique.html" class="card__link">
-            <div class="fr">Lire la suite <div> 
-          </a>
+          <a href="/FR/musique.html" class="card__link">Lire la suite</a>
         </div>
       </article>
+
       <!-- Article 4 -->
       <article class="article">
-        <img src="/assets/img/img4.webp" alt="Nolan" class="article__img" />
+        <img 
+          src="/assets/img/img4.webp" 
+          alt="Nolan" 
+          class="article__img" 
+        />
         <div class="article__content">
-          <h4 class="article__title">Présentation Réalisateur </h4>
+          <h4 class="article__title">Présentation Réalisateur</h4>
           <p class="article__text">
-            Maître du cinéma moderne, Christopher Nolan est reconnu pour ses récits captivants et complexes, mêlant science, psychologie et temporalité dans des chefs-d'œuvre 
+            Maître du cinéma moderne, Christopher Nolan est reconnu 
+            pour ses récits captivants et complexes, mêlant science, 
+            psychologie et temporalité dans des chefs-d'œuvre.
           </p>
-          <a href="#" class="card__link">
-            <div class="fr">Lire la suite <div> 
-          </a>
+          <a href="/fr/realisateur.html" class="card__link">Lire la suite</a>
         </div>
       </article>
+
       <!-- Article 5 -->
       <article class="article">
-        <img src="/assets/img/img5.webp" alt="livre" class="article__img" />
+        <img 
+          src="/assets/img/img5.webp" 
+          alt="livre" 
+          class="article__img" 
+        />
         <div class="article__content">
-          <h4 class="article__title">Présentation du livre </h4>
+          <h4 class="article__title">Présentation du livre</h4>
           <p class="article__text">
-            Dans L'Horloger d'Everton, Georges Simenon nous plonge dans un drame poignant où un horloger voit sa vie bouleversée par un crime  commis par son fils.
-            </p>
-            <a href="#" class="card__link">
-                <div class="fr">Lire la suite <div> 
-              </a>
+            Dans “L'Horloger d'Everton”, Georges Simenon nous plonge 
+            dans un drame poignant où un horloger voit sa vie bouleversée 
+            par un crime commis par son fils.
+          </p>
+          <a href="/fr/livre.html" class="card__link">Lire la suite</a>
         </div>
       </article>
     </section>
@@ -134,34 +175,33 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer" id="contact">
     <div class="footer__logo">
-      <img src="/assets/img/logo.svg" alt="Logo Echos of Time" />
+      <img 
+        src="/assets/img/logo.svg" 
+        alt="Logo Echos of Time" 
+      />
     </div>
     <div class="footer__info">
       <p class="footer__author">Enzo Locatelli MMI 1 B2 | enzort70290@gmail.Com</p>
       <p class="footer__mention">
-     
-          Projet réalisé en 2024 dans le cadre d’un exercice pédagogique 
-          au département MMi de Montbéliard
-        
+        Projet réalisé en 2024 dans le cadre d’un exercice pédagogique 
+        au département MMi de Montbéliard
       </p>
     </div>
     <nav class="footer__nav">
       <ul class="footer__menu">
         <li class="footer__menu-item">
-          <a href="#">
-            <span class="fr">Autres projets</span>
+          <a href="/fr/Partenaires.html">
+            Autres projets
           </a>
         </li>
         <li class="footer__menu-item">
-          <a href="#articles">Articles</a>
+          <a href="/fr/index.html">Articles</a>
         </li>
         <li class="footer__menu-item">
-          <a href="#contact">Contact</a>
+          <a href="/fr/contact.html">Contact</a>
         </li>
         <li class="footer__menu-item">
-          <a href="#glossaire">
-            <span class="fr">Glossaire</span>
-          </a>
+          <a href="/fr/glossaire.html">Glossaire</a>
         </li>
       </ul>
     </nav>

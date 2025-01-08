@@ -1,0 +1,45 @@
+/* ========== MAIN / SECTIONS ========== */
+.main {
+    padding: 1rem;
+  }
+  
+  /* Intro Section */
+  .main__intro {
+    background-color: #6e7a78;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .main__intro-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .main__intro-text {
+    font-size: 1rem;
+  }
+  
+  /* Definition Section */
+  .main__definition {
+    background-color: #e3e3e3;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .main__definition-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .main__definition-text {
+    font-size: 1rem;
+  }
+  
+  /* Articles Section */
+  .main__articles {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .main__articles-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  

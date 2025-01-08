@@ -1,0 +1,36 @@
+/* ========== HEADER ========== */
+.header {
+    background-color: #1a2430;
+    color: #ffd700;
+    padding: 0.8rem;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header__menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #ffd700;
+    cursor: pointer;
+  }
+  
+  .header__lang-switch {
+    background: #ffd700;
+    color: #1a2430;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  

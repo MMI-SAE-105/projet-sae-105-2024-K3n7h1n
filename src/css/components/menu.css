@@ -1,0 +1,52 @@
+/* ========== MOBILE MENU ========== */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 300px;
+    height: 100%;
+    background-color: #1a2430;
+  
+    transform: translateX(10%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+  
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: 999;
+    padding-top: 3rem;
+  }
+  
+  .mobile-menu.open {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .mobile-menu__list {
+    list-style: none;
+    padding: 0 1rem;
+  }
+  
+  .mobile-menu__item {
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-menu__link {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .mobile-menu__close-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffd700;
+    cursor: pointer;
+  }
+  

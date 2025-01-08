@@ -1,0 +1,44 @@
+/* ========== FOOTER ========== */
+.footer {
+    background-color: #1a2430;
+    color: #ffd700;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__info {
+    margin-bottom: 1rem;
+  }
+  
+  .footer__author {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  .footer__mention {
+    font-size: 0.9rem;
+  }
+  
+  .footer__nav {
+    margin-top: 1rem;
+  }
+  
+  .footer__menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer__menu-item a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  

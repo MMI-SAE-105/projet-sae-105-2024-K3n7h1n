@@ -1,0 +1,33 @@
+/* ========== ARTICLE ========== */
+.article {
+    display: flex;
+    flex-direction: column;
+    background: #bfccca;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  .article__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .article__content {
+    padding: 0.5rem 0.8rem;
+    border-color: #ffd700;
+  }
+  .article__title {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    color: #8c7806;
+  }
+  .article__text {
+    font-size: 0.95rem;
+    color: #1a2430; /* bleu nuit */
+  }
+  .card__link {
+    color: #1a2430;
+    font-weight: bold;
+  }
+  
